@@ -11,9 +11,11 @@
     <link rel="stylesheet" href="{% static "style.css" %}}">
     {% tailwind_css %}
  </head>
- <body>
-    <nav>This is Our Navbar</nav>
-    {% block content %}{% endblock  %}
+ <body class="min-h-screen">
+   <main style="flex: 1 0 auto;">
+      <nav class="py-4 text-center"><h1 class="text-3xl">This is Our Navbar</h1></nav>
+      {% block content %}{% endblock  %}
+   </main>
 
  </body>
  </html>

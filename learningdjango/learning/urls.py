@@ -20,5 +20,6 @@ from . import views
 
 urlpatterns = [
     path("", views.all_learners, name="all_learner"),
+    path("<int:book_id>/", views.book_details, name="details"),
     # path("apply/", views.all_learners, name="all_learner"),
 ]
